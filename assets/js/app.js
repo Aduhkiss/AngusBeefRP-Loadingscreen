@@ -72,7 +72,8 @@ function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamem
     dqs('[data-servername]').innerText = servername;
     dqs('[data-maxplayers]').innerText = maxplayers;
     dqs('[data-gamemode]').innerText   = gamemode;
-	dqs('[data-rank]').innerText = getRank(steamid);
+    dqs('[data-rank]').innerText = getRank(steamid);
+    dqs('[data-steam]').innerText = steamid;
 }
 function DownloadingFile( fileName ) {
     dqs('[data-currentfile]').innerText = fileName;
